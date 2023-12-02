@@ -5,7 +5,7 @@ metadata:
   name: tomcat-service-2
 spec:
   selector:
-    app: tomcat
+    app: tomcat-2
   ports:
     - protocol: TCP
       port: 80
