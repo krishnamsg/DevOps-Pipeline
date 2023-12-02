@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tomcat-deployment
+  name: tomcat-deployment-2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: tomcat
+      app: tomcat-2
   template:
     metadata:
       labels:
-        app: tomcat
+        app: tomcat-2
     spec:
       containers:
-      - name: tomcat-container
-        image: krishnamsg/complete-prodcution-e2e-pipeline:1.0.0-30
+      - name: tomcat-container-2
+        image: krishnamsg/tomcat-boxer:latest
         ports:
         - containerPort: 8080
 
