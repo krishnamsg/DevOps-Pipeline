@@ -32,7 +32,7 @@ pipeline {
                     git commit -m "Updated deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/krishnamsg/gitops-complete-production-e2e-pipeline main"
+                    sh "git push https://github.com/krishnamsg/DevOps-Pipeline.git main"
                     
                 }
             }
