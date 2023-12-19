@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tomcat-container-2
-        image: krishnamsg/complete-prodcution-e2e-pipeline:1.0.0-41
+        image: krishnamsg/complete-prodcution-e2e-pipeline:1.0.0-42
         ports:
         - containerPort: 8080
 
